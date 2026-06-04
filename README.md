@@ -12,10 +12,14 @@ npx serve .
 
 ## 部署到 GitHub Pages
 
-1. 在 GitHub 新建仓库（如 `cong-zexi-resume`）
-2. 上传本文件夹全部内容
-3. Settings → Pages → Source 选 **Deploy from a branch** → branch `main` → folder `/ (root)`
-4. 访问：`https://1xovox1.github.io/cong-zexi-resume/`
+本地已初始化 Git。双击 **`部署到GitHub.bat`** 按提示操作即可（会打开浏览器创建仓库并推送）。
+
+或手动执行：
+
+1. 打开 [新建仓库](https://github.com/new?name=cong-zexi-resume) → 仓库名 **`cong-zexi-resume`** → **Public** → 不要勾选「Add a README」→ Create
+2. 在本目录执行：`git push -u origin main`（首次会弹出 GitHub 登录）
+3. 仓库 **Settings → Pages** → Source：**Deploy from a branch** → **main** → **/ (root)** → Save
+4. 等待 1～3 分钟后访问：**https://1xovox1.github.io/cong-zexi-resume/**
 
 ## 页面结构
 
