@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>能力详情 · Agent 视角 — 丛泽熙</title>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="brand" href="../index.html">Z.X.<span>Cong</span></a>
+    <button class="nav-toggle" aria-label="菜单">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">自我介绍</a></li>
+      <li><a href="../index.html#capabilities">能力</a></li>
+      <li><a href="../index.html#projects">项目</a></li>
+      <li><a href="agent.html" class="active">Agent</a></li>
+      <li><a href="../index.html#contact">联系</a></li>
+    </ul>
+  </nav>
+
+  <main class="wrap">
+    <header class="page-hero">
+      <a class="back-link" href="../index.html">← 返回主页</a>
+      <div class="section-label">能力详情 · 视角 01</div>
+      <h1>从 Agent 视角：电商企业 AI 运行时架构</h1>
+      <p class="page-lead">
+        在鹏泰宝尊的实践中，我把 Agent 理解为可编排的企业运行时：接入多模型网关、沉淀业务记忆、通过 MCP 与工具安全调用外部世界、用 Planning 把运营意图拆成可执行步骤，并在复杂场景下用多 Agent 分工协作。
+      </p>
+    </header>
+
+    <div class="mindmap">
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">能力思维导图 · 电商 Agent 五层架构</p>
+      <div class="mindmap-inner">
+        <div class="mm-node"><h4>① 网关层</h4><ul><li>Dify 统一入口</li><li>多模型 API 路由</li><li>意图识别分流</li></ul></div>
+        <div class="mm-node"><h4>② 记忆层</h4><ul><li>RAG 知识库</li><li>全局上下文</li><li>RLHF 反馈迭代</li></ul></div>
+        <div class="mm-node"><h4>③ 工具层</h4><ul><li>MCP / 自定义节点</li><li>Python 扩展</li><li>多文件批处理</li></ul></div>
+        <div class="mm-node"><h4>④ 规划层</h4><ul><li>Dify 工作流</li><li>n8n 编排</li><li>LangGraph 进阶</li></ul></div>
+        <div class="mm-node"><h4>⑤ 协作层</h4><ul><li>垂直业务 Agent</li><li>10+ 场景分身</li><li>跨部门复用</li></ul></div>
+      </div>
+    </div>
+
+    <article class="content-block">
+      <h2>网关层 —— 多模态 AI 中枢入口</h2>
+      <p>鹏宝 AI 2.0 从单文本助手升级为多模态中枢：海内外大模型 API 统一接入，全局上下文记忆 + 多模态意图路由。</p>
+      <div class="highlight-box"><strong>实践：</strong>通过 OpenRouter、硅基流动对接全品类模型，按场景做成本与效果平衡。</div>
+    </article>
+
+    <article class="content-block">
+      <h2>记忆层 —— RAG + 业务反馈飞轮</h2>
+      <p>知识库覆盖直播合规、跨境政策、产品 FAQ；轻量化 RLHF 机制收集点赞/差评，为知识库与 Prompt 优化提供真实业务信号。</p>
+    </article>
+
+    <article class="content-block">
+      <h2>工具层 —— MCP 与 Python 自定义节点</h2>
+      <p>竞品监控系统中，爬虫数据经 n8n 流入 Dify 分析引擎；鹏宝 AI 2.0 支持多文件批量处理、跨境翻译、数据点检等工具链。</p>
+    </article>
+
+    <article class="content-block">
+      <h2>规划层 —— Dify / n8n / LangGraph</h2>
+      <p>日报类任务用 Dify 固定工作流；竞品监控用 n8n 定时触发 + 条件分支；复杂多步诊断场景预留 LangGraph 状态图能力。</p>
+    </article>
+
+    <article class="content-block">
+      <h2>协作层 —— 10+ 垂直业务 Agent</h2>
+      <p>直播合规话术、业务数据智能点检、跨境多语言翻译、视频脚本生成等各自独立 Agent，共享企业知识库与网关。</p>
+      <p>相关项目：<a href="../projects/pengbao-ai2.html">鹏宝 AI 2.0</a> · <a href="../projects/competitor-monitor.html">竞品监控</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer wrap">© 2026 丛泽熙 · Cong Zexi</footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
