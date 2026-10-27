@@ -1,282 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="丛泽熙 — AI 产品经理 & AI应用搭建师" />
-  <title>丛泽熙 · AI 产品经理 & AI应用搭建师</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="丛泽熙｜企业 AI 应用架构、Agent 平台与 AIGC 商业化作品集">
+  <meta name="theme-color" content="#0b1220">
+  <title>丛泽熙｜企业 AI 应用与 Agent 平台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial' font-size='24' font-weight='700' fill='%23c9ff4a'%3ECZ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="site-nav">
-    <a class="brand" href="index.html">Z.X.<span>Cong</span></a>
-    <button class="nav-toggle" aria-label="菜单">☰</button>
-    <ul class="nav-links">
-      <li><a href="#about" class="active">自我介绍</a></li>
-      <li><a href="#education">学历</a></li>
-      <li><a href="#experience">经历</a></li>
-      <li><a href="#projects">项目</a></li>
-      <li><a href="#capabilities">能力</a></li>
-      <li><a href="#contact">联系</a></li>
-    </ul>
-  </nav>
+  <a class="skip-link" href="#main">跳到主要内容</a>
 
-  <main class="wrap">
-    <header class="hero reveal">
-      <div class="hero-photo-col">
-        <div class="hero-photo-frame">
-          <div class="hero-photo-inner">
-            <img class="hero-photo" src="images/profile.png" alt="丛泽熙" width="198" height="254" />
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">CZ</span>
+      <span class="brand-name">丛泽熙</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+      <span class="sr-only">打开导航</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="页面导航">
+      <a href="#value">价值看板</a>
+      <a href="#projects">项目</a>
+      <a href="#method">方法论</a>
+      <a href="#experience">经历</a>
+      <a class="nav-cta" href="#contact">联系我</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Enterprise AI · Agent Platform · AIGC</p>
+        <h1 id="hero-title">把企业里的 AI Demo，<br><em>变成持续工作的业务系统。</em></h1>
+        <p class="hero-lead">你好，我是丛泽熙。现就职于鹏泰宝尊，负责企业 AI 中台、垂直业务 Agent、数字员工与商业 AIGC 项目的设计和落地。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">查看代表项目 <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="mailto:744783423@qq.com">邮件联系</a>
+        </div>
+        <dl class="hero-meta">
+          <div><dt>当前定位</dt><dd>企业 AI 应用 / Agent 平台</dd></div>
+          <div><dt>业务领域</dt><dd>3C · 电商 · 新媒体 · 跨境</dd></div>
+          <div><dt>所在城市</dt><dd>北京</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="portrait-card">
+          <div class="portrait-grid" aria-hidden="true"></div>
+          <img src="assets/profile.png" alt="丛泽熙个人照片" width="427" height="932">
+          <div class="portrait-caption">
+            <span>AI Application Builder</span>
+            <strong>Cong Zexi</strong>
           </div>
         </div>
-      </div>
-      <div class="hero-main">
-        <div class="hero-eyebrow">AI Product · Agent Architecture · E-commerce</div>
-        <h1>丛泽熙 <em>Cong Zexi</em></h1>
-
-        <div class="hero-profile-grid">
-          <dl class="basic-info">
-            <div><dt>工作职位</dt><dd class="role-lines"><span>AI 产品经理</span><span>AI应用搭建师</span></dd></div>
-            <div><dt>籍贯</dt><dd>北京</dd></div>
-            <div><dt>年龄</dt><dd>23 岁</dd></div>
-            <div><dt>专业</dt><dd>电子商务（互联网）</dd></div>
-          </dl>
-          <div class="hero-edu-card" id="education">
-            <div class="hero-edu-label">教育背景 · 双培计划</div>
-            <p class="hero-edu-line"><strong>北京邮电大学</strong> <span>2021.09 — 2024.09</span></p>
-            <p class="hero-edu-sub">智能工程与自动化学院 · 电子商务（互联网）</p>
-            <p class="hero-edu-line"><strong>北京信息科技大学</strong> <span>2024.09 — 2025.06</span></p>
-            <p class="hero-edu-sub">本科学位 · 毕业院校</p>
-            <p class="hero-edu-score">高考 <strong>596 分</strong> · 对应录取线可达北京工业大学</p>
-          </div>
+        <div class="floating-note note-top">
+          <span>平台覆盖</span>
+          <strong>约 300 人</strong>
+        </div>
+        <div class="floating-note note-bottom">
+          <span>商业项目</span>
+          <strong>40 万合同</strong>
         </div>
       </div>
-    </header>
+    </section>
 
-    <section id="about">
-      <div class="section-label">自我介绍</div>
-      <h2 class="section-title">认识我</h2>
-      <div class="about-prose">
-        <p class="intro-greeting">你好，我是<strong>丛泽熙</strong>。谢谢您能在百忙中点进我的个人简历链接，希望接下来向您展示的内容可以让我顺利进面 😊</p>
-        <p>
-          2025 年毕业于<strong>北京邮电大学</strong>与<strong>北京信息科技大学</strong>（双培计划），拥有 <strong>2 年</strong>工作经验。现就职于<strong>鹏泰宝尊</strong>（三星官方核心代运营），统筹 3C、保健品、生鲜、东南亚跨境等业务的 AI 数字化，负责企业 AI 中台、垂直 Agent 与多模态商业化项目，覆盖从方案设计、开发搭建到上线运营的全流程。
-        </p>
-        <p>
-          我专注电商场景下的 Agent 架构设计与搭建、多模态内容生产与 AI 产品落地。正式入职 <strong>1 年内</strong>，主导并取得显著成果的 <strong>4 项核心项目</strong>如下：
-        </p>
-        <ol class="intro-list intro-list-num">
-          <li><strong>鹏宝 AI</strong> — 通用多模态大模型应用，整体体验对标豆包</li>
-          <li><strong>OpenClaw 竞品监控自动化</strong> — 全平台无人值守采集与智能分析</li>
-          <li><strong>数字人直播 SaaS</strong> — 跨境数字人直播产品化与压测落地</li>
-          <li><strong>AIGC 视频 SOP + 业务实操</strong> — 从创意脚本到规模化量产的完整流水线</li>
+    <section class="value-section" id="value" aria-labelledby="value-title">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-kicker">01 / VALUE DASHBOARD</p>
+            <h2 id="value-title">我的价值，不只是一串工具名。</h2>
+          </div>
+          <p>以下数据基于当前项目运营口径，用来呈现平台覆盖、业务采用、商业交付与持续运行能力。</p>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card metric-primary reveal">
+            <div class="metric-head"><span>企业平台覆盖</span><span class="metric-icon">↗</span></div>
+            <p class="metric-number"><span data-count="300">300</span><small>人</small></p>
+            <p class="metric-desc">鹏宝 AI 企业中台可触达用户，统一承载国内外模型与内部应用。</p>
+            <div class="sparkline" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+          <article class="metric-card reveal delay-1">
+            <div class="metric-head"><span>业务应用调用</span><span class="metric-tag">累计</span></div>
+            <p class="metric-number"><span data-count="9000">9,000</span><small>+</small></p>
+            <p class="metric-desc">Dify 后台应用调用记录，覆盖汇报、直播、数据分析等真实业务任务。</p>
+            <div class="metric-foot"><span>Workflow</span><span>Agent</span><span>Knowledge</span></div>
+          </article>
+          <article class="metric-card reveal delay-2">
+            <div class="metric-head"><span>商业项目支撑</span><span class="metric-tag">AIGC</span></div>
+            <p class="metric-number"><small>¥</small><span data-count="40">40</span><small>万</small></p>
+            <p class="metric-desc">参与支撑三星存储抖音新媒体运营合同，负责 AI 视频生产链路。</p>
+            <div class="metric-foot"><span>内容制作</span><span>账号运营</span><span>投流协同</span></div>
+          </article>
+          <article class="metric-card metric-dark reveal delay-3">
+            <div class="metric-head"><span>数字员工运行</span><span class="live-chip"><b></b> Daily</span></div>
+            <p class="metric-number"><span data-count="4">4</span><small>类</small></p>
+            <p class="metric-desc">竞品内容、商品价格、自动剪辑与 AI 视频生产，形成定时或按需执行链路。</p>
+            <div class="schedule-row"><span>07:00 内容监控</span><span>08:00 价格监控</span></div>
+          </article>
+        </div>
+
+        <div class="ops-strip reveal">
+          <div class="ops-label"><span>RUNNING COST</span><strong>具备平台经营意识</strong></div>
+          <div class="ops-item"><span>云服务器</span><strong>约 ¥5,000 / 月</strong></div>
+          <div class="ops-item"><span>Agent Plan</span><strong>约 ¥500 / 月</strong></div>
+          <div class="ops-item"><span>模型 API</span><strong>约 $1,000 / 月</strong></div>
+          <p>下一阶段：把使用量进一步转化为任务成功率、节省工时、采用率与业务结果。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker">02 / SELECTED WORK</p>
+          <h2 id="projects-title">不是做了什么功能，<br>而是解决了什么业务问题。</h2>
+        </div>
+        <p>从企业统一入口到垂直 Agent，再到持续运行的数字员工与商业内容交付。</p>
+      </div>
+
+      <article class="project-feature reveal">
+        <div class="project-copy">
+          <div class="project-index">CASE 01</div>
+          <p class="project-type">企业 AI 平台 · 0→1</p>
+          <h3>鹏宝 AI：让约 300 名员工从一个入口使用模型与 Agent</h3>
+          <p>基于 OpenWebUI 搭建企业统一入口，整合国内外模型和内部业务应用，解决原有 Dify Agent 入口分散、难以沉淀与推广的问题。</p>
+          <ul class="project-points">
+            <li><span>01</span>统一模型、应用与知识服务入口</li>
+            <li><span>02</span>承载三星、跨境、电商等垂直 Agent</li>
+            <li><span>03</span>负责云资源、API预算与日常运营</li>
+          </ul>
+          <div class="project-tags"><span>OpenWebUI</span><span>Dify</span><span>Multi-model</span><span>Alibaba Cloud</span></div>
+        </div>
+        <button class="project-image image-button" type="button" data-lightbox="assets/projects/pengbao-chat.png" aria-label="放大查看鹏宝 AI 界面">
+          <img src="assets/projects/pengbao-chat.png" alt="鹏宝 AI 对话界面" width="1024" height="487" loading="lazy">
+          <span class="image-label">Product Interface <b>↗</b></span>
+        </button>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="card-topline"><span>CASE 02</span><span>业务规范沉淀</span></div>
+          <h3>三星业务垂直 Agent</h3>
+          <p>将严格的汇报格式、品牌话术和分析规则转化成可以重复执行的工作流。</p>
+          <div class="case-list">
+            <div><strong>PPT 汇报 Agent</strong><span>按三星手机组固定汇报结构与话术生成内容</span></div>
+            <div><strong>直播脚本 Agent</strong><span>批量生成符合三星主播日常表达的直播话术</span></div>
+            <div><strong>东南亚分析 Agent</strong><span>面向亚马逊与 Google 数据完成业务分析</span></div>
+          </div>
+          <div class="card-outcome"><span>核心价值</span><strong>把个人经验变成组织可复用的规则</strong></div>
+        </article>
+
+        <article class="project-card project-card-visual reveal delay-1">
+          <div class="card-topline"><span>CASE 03</span><span>每天 07:00</span></div>
+          <h3>全域竞品内容监控数字员工</h3>
+          <p>自动获取抖音、天猫、小红书竞品内容，提取口播与分镜，分析优缺点并输出下一步建议。</p>
+          <button class="inline-shot image-button" type="button" data-lightbox="assets/projects/monitor-douyin-report.png" aria-label="放大查看竞品监控日报">
+            <img src="assets/projects/monitor-douyin-report.png" alt="竞品监控日报截图" width="919" height="899" loading="lazy">
+            <span>日报样例 ↗</span>
+          </button>
+          <div class="project-tags"><span>OpenClaw</span><span>Hermes</span><span>Feishu</span><span>Content Intelligence</span></div>
+        </article>
+
+        <article class="project-card project-card-visual reveal">
+          <div class="card-topline"><span>CASE 04</span><span>每天 08:00</span></div>
+          <h3>电商竞品价格监控数字员工</h3>
+          <p>采集天猫、淘宝、拼多多竞品店铺信息，自动生成表格和日报并发送至运营飞书群。</p>
+          <button class="inline-shot image-button" type="button" data-lightbox="assets/projects/monitor-feishu.png" aria-label="放大查看飞书日报">
+            <img src="assets/projects/monitor-feishu.png" alt="飞书竞品日报截图" width="1024" height="499" loading="lazy">
+            <span>飞书交付样例 ↗</span>
+          </button>
+          <div class="project-tags"><span>E-commerce</span><span>Crawler</span><span>Spreadsheet</span><span>Daily Report</span></div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="card-topline"><span>CASE 05</span><span>创意技术</span></div>
+          <h3>AI 视频生产与自动剪辑</h3>
+          <p>从素材剪辑到模型编排，探索可重复的商业视频生产流程。</p>
+          <div class="pipeline" aria-label="视频生产流程">
+            <span>创意 / 脚本</span><i>→</i><span>生图</span><i>→</i><span>生视频</span><i>→</i><span>剪辑</span>
+          </div>
+          <div class="case-list compact">
+            <div><strong>Hermes 自动剪辑助手</strong><span>接收拍摄素材后调用剪映插件完成剪辑</span></div>
+            <div><strong>Opus 5.5 + 即梦 CLI</strong><span>文本模型调度生图、生视频及 2D 代码动画</span></div>
+          </div>
+          <div class="card-outcome"><span>商业场景</span><strong>三星存储 AI 视频项目</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="method-section" id="method" aria-labelledby="method-title">
+      <div class="shell method-layout">
+        <div class="method-intro reveal">
+          <p class="section-kicker">03 / HOW I WORK</p>
+          <h2 id="method-title">我真正提供的，<br>是一条从需求到结果的路径。</h2>
+          <p>工具会变化，但把业务规则拆清楚、让系统稳定执行并验证结果，是可以持续迁移的能力。</p>
+        </div>
+        <ol class="method-list">
+          <li class="reveal"><span>01</span><div><h3>识别高价值任务</h3><p>找到高频、重复、规则明确或信息量巨大的业务环节。</p></div></li>
+          <li class="reveal"><span>02</span><div><h3>显性化业务规则</h3><p>把汇报格式、品牌口径、分析维度与人工判断标准结构化。</p></div></li>
+          <li class="reveal"><span>03</span><div><h3>选择合适执行方式</h3><p>在固定 Workflow、对话 Agent 和自主数字员工之间做取舍。</p></div></li>
+          <li class="reveal"><span>04</span><div><h3>接入真实工作环境</h3><p>连接模型、数据、插件、定时任务、飞书与内容生产工具。</p></div></li>
+          <li class="reveal"><span>05</span><div><h3>运营、评估与迭代</h3><p>追踪调用、成本、成功率、采用率和业务反馈，推动持续优化。</p></div></li>
         </ol>
+      </div>
+    </section>
 
-        <div class="intro-blocks">
-          <div class="intro-block">
-            <h3>AI Agent 搭建能力</h3>
-            <ul class="intro-list">
-              <li>Dify 等低代码平台的 Chatflow / Workflow 搭建</li>
-              <li>React、Vue 等前端开发与产品原型实现</li>
-              <li>Python 数据爬虫与自定义业务节点</li>
-              <li>Vibe Coding（Cursor、Claude Code、Codex）</li>
-              <li>大模型 API 对接与多模型路由</li>
-            </ul>
-          </div>
-          <div class="intro-block">
-            <h3>产品能力</h3>
-            <p>从整体出发，覆盖需求调研、梳理、跨部门沟通、方案产出、宣讲演示、测试验收到上线推广的全套产品流程。</p>
-            <p class="intro-tools">常用工具：<strong>Axure</strong> 原型图、<strong>WPS</strong> 文档与表格等。</p>
-          </div>
-          <div class="intro-block">
-            <h3>AIGC 能力</h3>
-            <p><strong>个人产出 SOP：</strong></p>
-            <ol class="intro-list intro-sop">
-              <li>AI 剧本生成</li>
-              <li>自研剧本转化提示词 Agent（Dify 自研）</li>
-              <li>配合 GPT-Image 2.0 出首帧、故事板与角色视图模版</li>
-              <li>Seedance 2.0 图生视频</li>
-              <li>剪映剪辑成片</li>
-            </ol>
-            <p class="intro-tools">日常习惯工具：即梦、TapNow、可灵、GPT、Codex（可直接控制 PS 工具）等。</p>
-          </div>
+    <section class="experience-section shell" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading reveal">
+        <div>
+          <p class="section-kicker">04 / EXPERIENCE</p>
+          <h2 id="experience-title">工作经历与能力结构</h2>
         </div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <div class="section-label">工作经历</div>
-      <h2 class="section-title">鹏泰宝尊</h2>
-      <div class="timeline">
-        <article class="tl-item">
-          <div class="tl-head"><h3>鹏泰宝尊 · 三星官方核心代运营</h3><span class="tl-time">2025.05 — 至今 · 1年正式经验</span></div>
-          <p class="tl-role role-lines"><span>AI 产品经理</span><span>AI应用搭建师</span></p>
-
-          <div class="result-block">
-            <h4 class="result-title">日常工作</h4>
-            <p class="daily-lead">兼具产品经理与 AI 应用搭建双重角色，从需求接收到 Agent 上线迭代全程负责。</p>
-            <ul class="result-list">
-              <li>对接各业务部门<strong>运营同学的需求</strong>，梳理业务痛点，设计 AI 赋能解决方案</li>
-              <li>与开发沟通<strong>技术实现可行性</strong>，再与运营确认方案是否合理、能否真正提效</li>
-              <li>开发对应 <strong>AI Agent</strong> 及配套<strong>系统前端</strong>；通过 Dify 链接供运营快速试用，收集真实业务反馈</li>
-              <li>验证通过后上线<strong>鹏宝 AI 工作台</strong>；依托点赞 / 点踩机制持续优化、迭代 Agent</li>
-              <li>制作 <strong>AI 培训 PPT</strong>、召开宣讲会，帮助业务同学提升 AI 工具使用能力</li>
-              <li>跟进项目<strong>经费预算与审批流程</strong>，保障算力及各项 AI 费用稳定可控</li>
-              <li>与<strong>合作方</strong>洽谈项目细节，参会沟通合作方式与相关费用，核算内部成本与对外报价</li>
-            </ul>
-          </div>
-
-          <p class="result-divider-label">核心项目成果</p>
-
-          <div class="result-block">
-            <h4 class="result-title">鹏宝 AI 2.0 · 企业多模态中台</h4>
-            <ul class="result-list">
-              <li>基于 <strong>Dify</strong> 完成 AI 基座 0→1，升级为多模态中枢，接入多模型 API、全局记忆与意图路由</li>
-              <li>落地 <strong>10+ 垂直 Agent</strong>：直播合规话术、数据点检、跨境翻译等</li>
-              <li>周报、脚本产出由 <strong>小时级降至分钟级</strong>，跨部门文案人力显著减少</li>
-              <li>建立点赞/差评 <strong>RLHF 反馈</strong>，驱动知识库与 Prompt 迭代</li>
-            </ul>
-          </div>
-          <div class="result-block">
-            <h4 class="result-title">多模态 AIGC 内容工厂</h4>
-            <ul class="result-list">
-              <li>MJ 锁首帧 + 可灵/Seedance 流水线，单条短视频成本 <strong>≤10 元</strong>，制作成本约降 <strong>99%</strong></li>
-              <li>竞品视频拆解 Agent：自动分析分镜与脚本，生成翻拍文案</li>
-              <li>泰/越语数字人直播压测，输出 TikTok 跨境直播方案</li>
-            </ul>
-          </div>
-          <div class="result-block">
-            <h4 class="result-title">全域竞品自动化监控</h4>
-            <ul class="result-list">
-              <li><strong>n8n + OpenClaw + Dify</strong>：抖音、小红书 7×24 自动采集</li>
-              <li><strong>30+ 维度</strong>拆解爆款与转化，每日输出分析报告与优化建议</li>
-            </ul>
-          </div>
-        </article>
+        <p>既理解产品和运营，也能亲手完成 Agent、自动化与 AIGC 生产链路。</p>
       </div>
 
-      <div class="section-label section-label-spaced">实习经历 · 工作成果 · 1年实习经验</div>
-      <div class="timeline">
-        <article class="tl-item">
-          <div class="tl-head"><h3>淘车车科技</h3><span class="tl-time">2024.12 — 2025.04</span></div>
-          <p class="tl-role">AI 产品经理实习生</p>
-          <div class="result-block">
-            <ul class="result-list">
-              <li>「淘车大脑」需求与迭代，优化知识库检索，提升<strong>自动应答率</strong></li>
-              <li>搭建客服数据看板；<strong>B 端素材中台 0→1</strong>（智能说车、素材库、文案生成），输出全套 PRD</li>
-              <li>原型：<a href="https://lww6ca.axshare.com" target="_blank" rel="noopener">Axure</a> · <a href="https://codesign.qq.com/s/538182688242400" target="_blank" rel="noopener">CoDesign</a></li>
-            </ul>
-          </div>
-        </article>
-        <article class="tl-item">
-          <div class="tl-head"><h3>去哪儿网</h3><span class="tl-time">2024.09 — 2024.12</span></div>
-          <p class="tl-role">直播运营实习生 · 旅游线</p>
-          <div class="result-block">
-            <ul class="result-list">
-              <li>抖音<strong>千川投流</strong>，拆解场观/停留/转化，优化货盘与投产</li>
-              <li>直播出镜、短视频二创、店铺后台，熟悉旅游电商全链路</li>
-            </ul>
-          </div>
-        </article>
-        <article class="tl-item">
-          <div class="tl-head"><h3>中国邮政</h3><span class="tl-time">2024.06 — 2024.09</span></div>
-          <p class="tl-role">市场 & 直播运营实习生</p>
-          <div class="result-block">
-            <ul class="result-list">
-              <li><strong>SQL + Excel</strong> 选品分析；直播脚本、OBS 推流、实景带货</li>
-              <li>品牌软文与线下网点市场协助</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="section-label">项目</div>
-      <h2 class="section-title">代表性工作</h2>
-      <div class="proj-grid">
-        <a class="proj-card" href="projects/pengbao-ai2.html">
-          <div class="proj-tag">AI 中台</div>
-          <h3>鹏宝 AI 2.0</h3>
-          <p>Dify 多模态 AI 中枢，10+ 垂直 Agent，RLHF 反馈闭环。</p>
-          <div class="proj-metrics"><span>10+ Agent</span><span>多模态</span></div>
-          <div class="proj-stack"><code>Dify</code><code>RAG</code><code>RLHF</code></div>
-          <span class="cap-link">详情 →</span>
-        </a>
-        <a class="proj-card" href="projects/competitor-monitor.html">
-          <div class="proj-tag">自动化</div>
-          <h3>竞品监控分析系统</h3>
-          <p>全平台采集 + 30+ 维度智能分析与日报。</p>
-          <div class="proj-metrics"><span>7×24</span><span>30+ 维度</span></div>
-          <div class="proj-stack"><code>n8n</code><code>OpenClaw</code><code>Dify</code></div>
-          <span class="cap-link">详情 →</span>
-        </a>
-        <a class="proj-card" href="projects/digital-workbench.html">
-          <div class="proj-tag">产品 Demo</div>
-          <h3>鹏宝数字工作台</h3>
-          <p>电商 SaaS 交互原型，含在线可体验版本。</p>
-          <div class="proj-metrics"><span>Vue 3</span><span>在线 Demo</span></div>
-          <div class="proj-stack"><code>Vue</code><code>Vite</code><code>Cursor</code></div>
-          <span class="cap-link">详情 →</span>
-        </a>
-      </div>
-    </section>
-
-    <section id="capabilities" class="section-capabilities">
-      <div class="section-head-cap">
-        <div class="section-label">专业能力</div>
-        <h2 class="section-title section-title-lg">四大核心能力</h2>
-        <p class="section-desc">基于项目实践归纳的能力矩阵，覆盖 Agent 架构、自动化、AIGC 与电商商业化全链路。</p>
-      </div>
-      <div class="cap-grid cap-grid-lg">
-        <a class="cap-card cap-card-lg" href="capabilities/agent.html">
-          <div class="cap-num">01</div>
-          <h3>企业级 Agent 架构</h3>
-          <p>Dify / n8n / LangGraph 编排，RAG、提示词工程、多模态意图路由；Python 自定义节点，OpenRouter、硅基流动 API，企业 AI 中枢从 0 到 1。</p>
-          <span class="cap-link">Agent 能力详情 →</span>
-        </a>
-        <div class="cap-card cap-card-lg">
-          <div class="cap-num">02</div>
-          <h3>自动化 & 具身智能</h3>
-          <p>RPA + OpenClaw，定时任务 + 爬虫 + 大模型分析，竞品监控、数据巡检、自动化报表。</p>
+      <div class="experience-layout">
+        <div class="timeline">
+          <article class="timeline-item current reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025.07 — 至今</div>
+            <h3>鹏泰宝尊</h3>
+            <p class="timeline-role">企业 AI 应用 / Agent 搭建</p>
+            <p>负责企业 AI 中台、垂直业务 Agent、数字员工、AIGC 商业项目及相关预算、合作与内部推广。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024.12 — 2025.04</div>
+            <h3>淘车车科技</h3>
+            <p class="timeline-role">AI 产品经理实习生</p>
+            <p>参与“淘车大脑”需求迭代、知识库检索优化、客服数据看板与 B 端素材中台设计。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024.09 — 2024.12</div>
+            <h3>去哪儿网</h3>
+            <p class="timeline-role">直播运营实习生</p>
+            <p>参与旅游直播、千川投流、货盘与转化分析，积累电商内容与增长经验。</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024.06 — 2024.09</div>
+            <h3>中国邮政</h3>
+            <p class="timeline-role">市场与直播运营实习生</p>
+            <p>使用 SQL、Excel 完成选品分析，并参与直播脚本、OBS 推流与内容运营。</p>
+          </article>
         </div>
-        <div class="cap-card cap-card-lg">
-          <div class="cap-num">03</div>
-          <h3>多模态 AIGC 量产</h3>
-          <p>Midjourney、可灵、Seedance；首帧定妆 + 图生视频 SOP，短视频、虚拟 IP、多语种数字人直播。</p>
-        </div>
-        <div class="cap-card cap-card-lg">
-          <div class="cap-num">04</div>
-          <h3>电商 AI 商业化</h3>
-          <p>3C、保健品、生鲜、跨境电商；直播、投流、竞品运营场景下的 Agent 方案设计与 ROI 验证。</p>
-        </div>
+
+        <aside class="capability-panel reveal">
+          <div class="capability-block">
+            <span class="cap-label">PLATFORM</span>
+            <h3>企业 AI 平台</h3>
+            <p>OpenWebUI · Dify · 多模型 API · 知识库 · 意图路由 · 持续记忆</p>
+          </div>
+          <div class="capability-block">
+            <span class="cap-label">AGENT</span>
+            <h3>数字员工与自动化</h3>
+            <p>OpenClaw · Hermes · 定时任务 · 爬虫 · 飞书 · 工具调用</p>
+          </div>
+          <div class="capability-block">
+            <span class="cap-label">CREATIVE</span>
+            <h3>多模态内容生产</h3>
+            <p>Image 2.0 · Seedance · 即梦 · TapNow · 剪映 · 代码动画</p>
+          </div>
+          <div class="capability-block">
+            <span class="cap-label">PRODUCT</span>
+            <h3>产品与业务</h3>
+            <p>需求调研 · 流程拆解 · 方案设计 · 成本预算 · 培训推广 · 项目交付</p>
+          </div>
+          <div class="education-card">
+            <span>EDUCATION</span>
+            <strong>北京邮电大学 × 北京信息科技大学</strong>
+            <p>双培计划 · 电子商务（互联网）· 2025届本科</p>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="tech">
-      <div class="section-label">工具链</div>
-      <h2 class="section-title">常用技术</h2>
-      <div class="tech-grid">
-        <span class="tech-pill"><strong>编排</strong> Dify · n8n · LangGraph</span>
-        <span class="tech-pill"><strong>模型</strong> OpenRouter · 硅基流动</span>
-        <span class="tech-pill"><strong>AIGC</strong> Midjourney · 可灵 · Seedance</span>
-        <span class="tech-pill"><strong>开发</strong> Python · Vue · API</span>
-        <span class="tech-pill"><strong>IDE</strong> Cursor · Claude Code · Codex</span>
-        <span class="tech-pill"><strong>自动化</strong> OpenClaw · RPA</span>
+    <section class="next-section shell reveal" aria-labelledby="next-title">
+      <div>
+        <p class="section-kicker">NEXT FOCUS</p>
+        <h2 id="next-title">正在把“能运行”，升级为“可评估、可治理、可复制”。</h2>
+      </div>
+      <div class="next-grid">
+        <div><span>01</span><strong>Agent 评测</strong><p>任务成功率、采用率、人工介入率与回归测试。</p></div>
+        <div><span>02</span><strong>平台治理</strong><p>应用资产、权限、版本、日志、成本与发布机制。</p></div>
+        <div><span>03</span><strong>业务价值</strong><p>将调用数据继续转化为节省工时与经营结果。</p></div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="section-label">联系</div>
-      <h2 class="section-title">联系方式</h2>
-      <div class="contact-grid">
-        <div class="contact-item"><div class="label">手机</div><a href="tel:15711309675">157 1130 9675</a></div>
-        <div class="contact-item"><div class="label">邮箱</div><a href="mailto:744783423@qq.com">744783423@qq.com</a></div>
-        <div class="contact-item"><div class="label">籍贯</div><span>北京</span></div>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-layout reveal">
+        <div>
+          <p class="section-kicker">LET'S BUILD SOMETHING USEFUL</p>
+          <h2 id="contact-title">寻找企业 AI 应用、Agent 平台与 AIGC 商业化机会。</h2>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:744783423@qq.com"><span>邮箱</span><strong>744783423@qq.com</strong></a>
+          <a href="tel:15711309675"><span>电话</span><strong>157 1130 9675</strong></a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer wrap">© 2026 丛泽熙 · Cong Zexi</footer>
-  <script src="js/main.js"></script>
+  <footer class="footer shell">
+    <p>© 2026 Cong Zexi. Designed around outcomes, not buzzwords.</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+
+  <dialog class="lightbox" aria-label="项目图片预览">
+    <button class="lightbox-close" type="button" aria-label="关闭预览">×</button>
+    <img alt="项目图片放大预览">
+  </dialog>
+
+  <script src="app.js"></script>
 </body>
 </html>
